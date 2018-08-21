@@ -1,0 +1,22 @@
+#include "stm32f4xx_hal.h"
+#include "spi.h"
+#include "usart.h"
+#include "gpio.h"
+#include "ade7953_reg.h"
+
+void ADE7953_CS_LOW(void);
+void ADE7953_CS_HIGH(void);
+void ADE7953_RES_LOW(void);
+void ADE7953_RES_HIGH(void);
+void ADE7953_init(void);
+void SpiTest(void);
+void sortFrame(uint8_t rw, uint32_t reg, uint8_t *lit_int);
+void sortFrameWrite(uint8_t rw, uint32_t reg, uint32_t value, uint8_t *lit_int);
+void initRegADE(void);
+void UartADE(void);
+
+void startUartADE(void);
+void stopUartADE(void);
+
+uint16_t ADE7953_Read(uint16_t Reg);
+void ADE7953_Write(uint16_t Reg, uint32_t Value);

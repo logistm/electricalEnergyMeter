@@ -1,0 +1,1 @@
+smartenergymeter_cubemx_v4\startup_stm32f410rx.o: startup_stm32f410rx.s
